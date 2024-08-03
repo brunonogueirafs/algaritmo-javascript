@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="bg-warning">
+        <p class="display-5 text-center">Cadastro de Produtos</p>
+      </header>
+      <div class="container">
+        <p class="text-center">Sistema de gerenciamento de produtos</p>
+        <div class="action">
+          <button
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Cadastrar Item
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header bg-warning">
+                  <h1 class="modal-title" id="exampleModalLabel">
+                    Cadastrar produtos
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form">
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <label for="inputProduto" class="form-label"
+                          >Produto</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputProduto"
+                          placeholder="Produto"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <label for="inputMarca" class="form-label">Marca</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputMarca"
+                          placeholder="Marca"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="inputEstoque" class="form-label"
+                          >Estoque</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputEstoque"
+                          placeholder="Estoque"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label for="inputCusto" class="form-label"
+                          >Preço Custo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputCusto"
+                          placeholder="Preço Custo"
+                        />
+                      </div>
+                      <div class="col-4">
+                        <label for="inputVenda" class="form-label"
+                          >Preço Venda</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputVenda"
+                          placeholder="Preço Venda"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Cadastrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <table id="products-list"class="table table-striped">
+          <thead class="bg-warning">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Produto</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Estoque</th>
+              <th scope="col">Preço custo</th>
+              <th scope="col">Preço venda</th>
+              <th></th>
+            </tr>
+          </thead>
+          
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
